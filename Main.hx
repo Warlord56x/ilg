@@ -45,7 +45,7 @@ class Main {
 					p.innerHTML = '<b>${row[0]} ${row[1]}</b>';
 					div.appendChild(p);
 					for (entry in 0...row.length) {
-						if ((entry != 0) && (entry != 1) && (entry < 6)) {
+						if ((entry != 0) && (entry != 1) && (entry < 8)) {
 							final p:ParagraphElement = Browser.document.createParagraphElement();
 							p.innerText = row[entry].toString();
 							div.appendChild(p);
