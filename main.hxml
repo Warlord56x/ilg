@@ -1,4 +1,4 @@
---js main.js
+--js public/main.js
 -main Main
 -dce full
 -D analyzer-optimize
