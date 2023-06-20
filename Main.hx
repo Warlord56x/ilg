@@ -26,6 +26,10 @@ class Main {
 				final csv:String = reader.result;
 				final rows:Entry = csv.split("\n");
 
+				if (StringTools.trim(rows[rows.length - 1]) == "") {
+					rows.pop();
+				}
+
 				final entries:Entries = [];
 				for (row in rows) {
 					if (row != rows[0]) {
@@ -40,10 +44,10 @@ class Main {
 					final p:ParagraphElement = Browser.document.createParagraphElement();
 					p.innerHTML = '<b>${row[0]} ${row[1]}</b>';
 					div.appendChild(p);
-					for (entry in row) {
-						if ((entry != row[0]) && (entry != row[1]) && (entry != row[6])) {
+					for (entry in 0...row.length) {
+						if ((entry != 0) && (entry != 1) && (entry < 8)) {
 							final p:ParagraphElement = Browser.document.createParagraphElement();
-							p.innerText = entry.toString();
+							p.innerText = row[entry].toString();
 							div.appendChild(p);
 						}
 					}
