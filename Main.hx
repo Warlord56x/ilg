@@ -42,7 +42,7 @@ class Main {
 					final div:DivElement = Browser.document.createDivElement();
 					Browser.document.body.appendChild(div);
 					final p:ParagraphElement = Browser.document.createParagraphElement();
-					p.innerHTML = '<b>${row[0]} ${row[1]}</b>';
+					p.innerHTML = '<b>${row[0]} ${row[1] ${row[7]}}</b>';
 					div.appendChild(p);
 					for (entry in 0...row.length) {
 						if ((entry != 0) && (entry != 1) && (entry < 8)) {
