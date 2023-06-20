@@ -5,7 +5,7 @@
   "main": "main.js",
   "scripts": {
     "build": "haxe main.hxml",
-    "deploy": "gh-pages -d .",
+    "deploy": "gh-pages -d public",
     "release": "npm run build && npm run deploy"
   },
   "author": "Aerobird98 aka. Ádám Török",
