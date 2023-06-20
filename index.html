@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Inventory label generator 0.1 Alpha by Aerobird98 aka. Ádám Török"
+    />
+    <title>Inventory label generator</title>
+  </head>
+  <body>
+    <script src="main.js"></script>
+    <noscript>Your browser does not support JavaScript!</noscript>
+    <style>
+      @page {
+        size: A4;
+        margin: 5mm;
+        padding: 5mm;
+      }
+
+      body,
+      html {
+        font-size: 16px;
+        margin: 0;
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      body {
+        max-width: 210mm;
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      @media print {
+        body,
+        html {
+          margin: 0;
+          padding: 0;
+        }
+
+        input {
+          display: hidden;
+        }
+      }
+
+      div {
+        flex: auto;
+        padding: 1rem;
+        margin: 0.25rem;
+        max-width: 210mm;
+        border: solid 1px black;
+        page-break-inside: avoid;
+      }
+
+      p {
+        margin: 0 0 0.5rem 0;
+      }
+    </style>
+  </body>
+</html>

@@ -1,0 +1,4 @@
+--js main.js
+-main Main
+-dce full
+-D analyzer-optimize
